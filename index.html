@@ -1,0 +1,53 @@
+<!--
+1. Start quiz button, link for high scores upper left. set timer (upper right) to 75 seconds
+2. On mouse click, start timer. while timer > 0, display array of questions with 4 multiple choice questions
+3. On mouse click, validate answer 
+	a. if answer is correct, display "Correct!" then add to score. Go the the next question.
+	b. If answer is wrong, display "Wrong!", subtract time by 5 sec. Go to the next question.
+5. If all questions have been answered before time == 0, display score and obtain user input for Initials (limit to 2 chars). Append to highscores array. Include submit button.
+6. If timer == 0 and not all questions have been answered, display message that Time is Up!. Display score and obtain user input for name. Include submit button.
+7. Highscores page - Display high scores. Go Back and Clear High Scores buttons
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- code to make document responsive and adaptive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!-- View High Scores and link to highschores.html -->
+    <a href="highscores.html">View Highscores</a>
+
+    <div id="wrapper">
+        <!-- display for timer  -->
+        <div id="timer"></div>
+
+        <!-- display for questions -->
+        <div id="questionsWindow">
+
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by ten seconds!</p>
+           
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
